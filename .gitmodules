@@ -1,0 +1,3 @@
+[submodule "ChibiOS18.2.3"]
+	path = ChibiOS18.2.3
+	url = ../../ChibiOS/ChibiOS.git
