@@ -1,7 +1,7 @@
-DATAPACKETCPP = $(AUTOCARPROJECT)/datapackets/gyrodata.cpp \
-                $(AUTOCARPROJECT)/datapackets/acceldata.cpp
+DATAPACKETCPP = $(PIXHAWK_EKF)/datapackets/gyrodata.cpp \
+                $(PIXHAWK_EKF)/datapackets/acceldata.cpp
 
-DATAPACKETINC = $(AUTOCARPROJECT)/datapackets
+DATAPACKETINC = $(PIXHAWK_EKF)/datapackets
 
 ALLCPPSRC += $(DATAPACKETCPP)
 ALLINC += $(DATAPACKETINC)

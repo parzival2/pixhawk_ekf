@@ -1,7 +1,7 @@
-DRIVERSCPPSRC = $(AUTOCARPROJECT)/drivers/spidevice.cpp \
-                $(AUTOCARPROJECT)/drivers/mpu6000.cpp
+DRIVERSCPPSRC = $(PIXHAWK_EKF)/drivers/spidevice.cpp \
+                $(PIXHAWK_EKF)/drivers/mpu6000.cpp
 
-DRIVERSINC = $(AUTOCARPROJECT)/drivers
+DRIVERSINC = $(PIXHAWK_EKF)/drivers
 
 ALLCPPSRC += $(DRIVERSCPPSRC)
 ALLINC += $(DRIVERSINC)

@@ -14,10 +14,10 @@
 #    limitations under the License.
 #
 # Required include directories
-BOARDINC = $(AUTOCARPROJECT)/boardfiles/
+BOARDINC = $(PIXHAWK_EKF)/boardfiles/
 
 # List of all the board related files.
-BOARDSRC = $(AUTOCARPROJECT)/boardfiles/board.c
+BOARDSRC = $(PIXHAWK_EKF)/boardfiles/board.c
 
 # Shared variables
 ALLCSRC += $(BOARDSRC)

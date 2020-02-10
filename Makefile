@@ -87,8 +87,8 @@ DEPDIR = dep
 PROJECT = pixhawk_ekf
 # Imported source files and paths
 CHIBIOS = $(PWD)/ChibiOS18.2.3
-#
-AUTOCARPROJECT = $(PWD)
+# Project location
+PIXHAWK_EKF = $(PWD)
 
 # Licensing files.
 include $(CHIBIOS)/os/license/license.mk
@@ -97,7 +97,7 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
-include $(AUTOCARPROJECT)/boardfiles/board.mk
+include $(PIXHAWK_EKF)/boardfiles/board.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -108,12 +108,12 @@ include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
 #include $(CHIBIOS)/test/oslib/oslib_test.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 include $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
-include $(AUTOCARPROJECT)/datapackets/datapackets.mk
-include $(AUTOCARPROJECT)/drivers/drivers.mk
+include $(PIXHAWK_EKF)/datapackets/datapackets.mk
+include $(PIXHAWK_EKF)/drivers/drivers.mk
 
 
 # Define linker script file here
-LDSCRIPT= $(AUTOCARPROJECT)/startup/Pixhawk_Linkerscript.ld
+LDSCRIPT= $(PIXHAWK_EKF)/startup/Pixhawk_Linkerscript.ld
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
