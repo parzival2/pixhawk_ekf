@@ -86,7 +86,7 @@ endif
 DEPDIR = dep
 PROJECT = pixhawk_ekf
 # Imported source files and paths
-CHIBIOS = $(PWD)/ChibiOS18.2.3
+CHIBIOS = $(PWD)/ChibiOS_18.2.x
 # Project location
 PIXHAWK_EKF = $(PWD)
 
