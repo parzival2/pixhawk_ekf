@@ -1,0 +1,3 @@
+EIGENINC = $(LIBRARIES)/Eigen/
+
+ALLINC += $(EIGENINC)
